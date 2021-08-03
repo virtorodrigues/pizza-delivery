@@ -1,0 +1,89 @@
+{
+  "steps": [
+    {
+      "id": 1,
+      "image_src": "dasdasd",
+      "description": "Escolha o tipo de borda:",
+      "title": "Escolha o tipo de borda:",
+      "items": [
+        {
+          "id": 1,
+          "name": "sem borda"
+        },
+        {
+          "id": 2,
+          "name": "recheada com cheddar"
+        },
+        {
+          "id": 3,
+          "name": "tradicional"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image_src": "dasdasd",
+      "description": "Escolha o tamanho da pizza:",
+      "title": "Escolha o tipo de borda:",
+      "items": [
+        {
+          "id": 1,
+          "name": "sem borda"
+        },
+        {
+          "id": 2,
+          "name": "recheada com cheddar"
+        },
+        {
+          "id": 3,
+          "name": "tradicional"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image_src": "dasdasd",
+      "description": "Escolha o sabor da pizza:",
+      "title": "Escolha o tipo de borda:",
+      "items": [
+        {
+          "id": 1,
+          "name": "sem borda"
+        },
+        {
+          "id": 2,
+          "name": "recheada com cheddar"
+        },
+        {
+          "id": 3,
+          "name": "tradicional"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image_src": "dasdasd",
+      "description": "Quantidade de pizza:",
+      "title": "Escolha o tipo de borda:",
+      "items": [
+        {
+          "id": 1,
+          "name": "sem borda"
+        },
+        {
+          "id": 2,
+          "name": "recheada com cheddar"
+        },
+        {
+          "id": 3,
+          "name": "tradicional"
+        }
+      ]
+    }
+  ],
+  "recommendedPizza": {
+    "id": 1,
+    "title": "Massas",
+    "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/massas.png"
+  }
+}
