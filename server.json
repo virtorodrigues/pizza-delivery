@@ -1,89 +1,163 @@
 {
+  "userScore": {
+    "score": 0
+  },
   "steps": [
     {
-      "id": 1,
-      "image_src": "dasdasd",
-      "description": "Escolha o tipo de borda:",
-      "title": "Escolha o tipo de borda:",
+      "id": 0,
+      "image_src": "http://localhost:3000/assets/pizza.jpg",
+      "description": "Escolha o tipo de massa:",
+      "title": "Tipo de Massa",
       "items": [
         {
+          "id": 0,
+          "name": "farinha integral"
+        },
+        {
           "id": 1,
-          "name": "sem borda"
+          "name": "tradicional"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "image_src": "http://localhost:3000/assets/pizza.jpg",
+      "description": "Escolha o tipo de borda:",
+      "title": "Tipo de Borda",
+      "items": [
+        {
+          "id": 0,
+          "name": "tradicional"
+        },
+        {
+          "id": 1,
+          "name": "catupiry"
         },
         {
           "id": 2,
-          "name": "recheada com cheddar"
-        },
-        {
-          "id": 3,
-          "name": "tradicional"
+          "name": "cheddar"
         }
       ]
     },
     {
       "id": 2,
-      "image_src": "dasdasd",
+      "image_src": "http://localhost:3000/assets/pizza.jpg",
       "description": "Escolha o tamanho da pizza:",
-      "title": "Escolha o tipo de borda:",
+      "title": "Tamanho",
       "items": [
         {
-          "id": 1,
-          "name": "sem borda"
+          "id": 0,
+          "name": "broto (4 pedaços)"
         },
         {
           "id": 2,
-          "name": "recheada com cheddar"
+          "name": "média (6 pedaços)"
         },
         {
           "id": 3,
-          "name": "tradicional"
+          "name": "família (8 pedaços)"
         }
       ]
     },
     {
       "id": 3,
-      "image_src": "dasdasd",
+      "image_src": "http://localhost:3000/assets/pizza.jpg",
       "description": "Escolha o sabor da pizza:",
-      "title": "Escolha o tipo de borda:",
+      "title": "Recheio",
       "items": [
         {
+          "id": 0,
+          "name": "brigadeiro"
+        },
+        {
           "id": 1,
-          "name": "sem borda"
+          "name": "4 queijos"
         },
         {
           "id": 2,
-          "name": "recheada com cheddar"
+          "name": "frango"
         },
         {
-          "id": 3,
-          "name": "tradicional"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "image_src": "dasdasd",
-      "description": "Quantidade de pizza:",
-      "title": "Escolha o tipo de borda:",
-      "items": [
-        {
-          "id": 1,
-          "name": "sem borda"
+          "id": 4,
+          "name": "portuguesa"
         },
         {
-          "id": 2,
-          "name": "recheada com cheddar"
+          "id": 5,
+          "name": "calabresa"
         },
         {
-          "id": 3,
-          "name": "tradicional"
+          "id": 6,
+          "name": "lombo"
+        },
+        {
+          "id": 7,
+          "name": "margherita"
+        },
+        {
+          "id": 8,
+          "name": "cheddar"
+        },
+        {
+          "id": 9,
+          "name": "cream cheese"
+        },
+        {
+          "id": 10,
+          "name": "brócolis"
         }
       ]
     }
   ],
-  "recommendedPizza": {
-    "id": 1,
-    "title": "Massas",
-    "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/massas.png"
-  }
+  "recommendedPizza": [
+    {
+      "id": 0,
+      "title": "Pizza de Calabresa",
+      "description": "calabresa, milho, cebola e queijo",
+      "image_url": "http://localhost:3000/assets/pizza-calabresa.jpg",
+      "benefit": {
+        "enable": true,
+        "score": 200
+      }
+    },
+    {
+      "id": 1,
+      "title": "Pizza quatro queijos",
+      "description": "queijo parmesão, provolone, gorgonzola, muzzarela, oregano e azeitonas",
+      "image_url": "http://localhost:3000/assets/pizza-quatro-queijos.jpg",
+      "benefit": {
+        "enable": false,
+        "score": 200
+      }
+    },
+    {
+      "id": 2,
+      "title": "Pizza de chocolate",
+      "description": "chocolate meio amargo",
+      "image_url": "http://localhost:3000/assets/pizza-chocolate.jpg",
+      "benefit": {
+        "enable": false,
+        "score": 200
+      }
+    },
+    {
+      "id": 3,
+      "title": "Pizza de Lombo",
+      "description": "lombo canadense, cebola, oregano e azeitonas",
+      "image_url": "http://localhost:3000/assets/pizza-lombo.jpg",
+      "benefit": {
+        "enable": true,
+        "score": 500
+      }
+    },
+    {
+      "id": 4,
+      "title": "Pizza Margherita",
+      "description": "mussarela, tomate, manjericão e azeitonas",
+      "image_url": "http://localhost:3000/assets/pizza-margherita.jpg",
+      "benefit": {
+        "enable": true,
+        "score": 500
+      }
+    }
+  ]
 }
