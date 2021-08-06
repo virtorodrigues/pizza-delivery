@@ -62,7 +62,7 @@
     {
       "id": 3,
       "image_src": "http://localhost:3000/assets/pizza.jpg",
-      "description": "Escolha o sabor da pizza:",
+      "description": "Escolha o recheio da pizza:",
       "title": "Recheio",
       "items": [
         {

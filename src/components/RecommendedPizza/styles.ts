@@ -20,28 +20,9 @@ export const Container = styled.section`
   color: #3A3A3A;
 `;
 
-export const PizzaDetail = styled.li`
-
-  + li {
-    margin-top: 8px;
-  }
-
-  cursor: pointer;
-
+export const PizzaDetail = styled.div`
   display: flex;
-  flex-direction: row;
-  width: 100vh;
-
-  padding: 32px;
-  border-radius: 20px;
-  background-color: white;
-
-  img {
-    border-radius: 50%;
-    width: 72px;
-    height: 72px;
-  }
-
+  
   div {
     margin-left: 16px;
     display: flex;
@@ -58,6 +39,39 @@ export const PizzaDetail = styled.li`
       font-size: 16px;
       font-weight: 500;
     }
+  }
+`
+
+export const PizzaContainer = styled.li`
+
+  + li {
+    margin-top: 8px;
+  }
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vh;
+
+  padding: 32px;
+  border-radius: 20px;
+  background-color: white;
+
+  img {
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+
+  span {
+    padding: 5px 20px;
+    background-color: #F24F00;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
   }
 
   transition: transform 0.2s;

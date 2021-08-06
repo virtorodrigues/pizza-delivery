@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, PizzaDetail, Title, Subtitle } from './styles';
+import { Container, PizzaDetail, Title, Subtitle, PizzaContainer } from './styles';
 import { useRecommendedPizza } from '../../hooks/useRecommendedPizza';
 import ModalUserScore from '../ModalUserScore';
 import { useUserScore } from '../../hooks/useUserScore';
@@ -48,13 +48,16 @@ const RecommendedPizza: React.FC = () => {
           <Subtitle>Descontos especiais para as pizzas selecionadas abaixo</Subtitle>
           <ul>
             {recommendedPizzas.map((pizza: RecommendedPizzaType) => (
-              <PizzaDetail key={pizza.id} onClick={() => handleGainUserScore(pizza.benefit)}>
-                <img src={pizza.image_url} alt="" title="" />
-                <div>
-                  <h3>{pizza.title}</h3>
-                  <strong>{pizza.description}</strong>
-                </div>
-              </PizzaDetail>
+              <PizzaContainer key={pizza.id} onClick={() => handleGainUserScore(pizza.benefit)}>
+                <PizzaDetail>
+                  <img src={pizza.image_url} alt="" title="" />
+                  <div>
+                    <h3>{pizza.title}</h3>
+                    <strong>{pizza.description}</strong>
+                  </div>
+                </PizzaDetail>
+                {pizza.benefit.enable && <span>Ganhe {pizza.benefit.score} pontos</span>}
+              </PizzaContainer>
             ))}
           </ul>
         </Container>
