@@ -56,13 +56,24 @@ export function StepsContextProvider(props: StepsContextProviderType) {
       const response = await api.get('/steps');
 
       setSteps(response.data);
-
-      //inicialize items selected of the steps
-      setItemsSelected(response.data.map((data: StepsType, index: number) => ({ activeStep: index, ...data.items[0] })));
     }
 
     loadSteps();
   }, []);
+
+  useEffect(() => {
+    //inicialize items selected of the steps
+    setItemsSelected(getInitialStateItems());
+
+  }, [steps]);
+
+  function getInitialStateItems() {
+    const varia = steps.map((data: StepsType, index: number) => ({
+      activeStep: index, ...data.items[0]
+    }));
+
+    return varia;
+  }
 
   function handleSelectItem({ activeStep, id, name }: itemSelectedType) {
 
@@ -84,6 +95,8 @@ export function StepsContextProvider(props: StepsContextProviderType) {
 
     if (activeStep + 1 === steps.length) {
       setOpenModalFinalize(true);
+      setItemsSelected(getInitialStateItems());
+      setActiveStep(0);
       return;
     }
 
