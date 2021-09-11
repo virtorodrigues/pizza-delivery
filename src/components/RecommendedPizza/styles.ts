@@ -32,7 +32,12 @@ export const PizzaDetail = styled.div`
     h3 {
       font-size: 32px;
       line-height: 32px;
+      margin-bottom: 3px;
+    }
+
+    p {
       margin-bottom: 8px;
+      font-size: 11px;
     }
 
     strong {

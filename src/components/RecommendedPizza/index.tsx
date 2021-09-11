@@ -15,6 +15,9 @@ type RecommendedPizzaType = {
   description: string;
   image_url: string;
   benefit: BenefitType;
+  typeOfDough: string;
+  size: string;
+  edge: string;
 }
 
 const RecommendedPizza: React.FC = () => {
@@ -53,6 +56,7 @@ const RecommendedPizza: React.FC = () => {
                   <img src={pizza.image_url} alt="" title="" />
                   <div>
                     <h3>{pizza.title}</h3>
+                    <p>Tipo de massa: {pizza.typeOfDough}, Tamanho: {pizza.size}, Tipo de borda: {pizza.edge}</p>
                     <strong>{pizza.description}</strong>
                   </div>
                 </PizzaDetail>

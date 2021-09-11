@@ -18,6 +18,9 @@ type RecommendedPizzaType = {
   description: string;
   image_url: string;
   benefit: BenefitType;
+  typeOfDough: string;
+  size: string;
+  edge: string;
 };
 
 type RecommendedPizzaContextType = {
